@@ -55,6 +55,8 @@ libtool
 .dirstamp
 build/
 
+.swiftpm
+
 #kdevelop
 .kdev/
 *.kdev*

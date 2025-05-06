@@ -6,57 +6,57 @@
  *
  * data of length is what needs to be passed to join_groupchat().
  */
-void tox_callback_group_invite(Tox *tox, void (*function)(Messenger *tox, int32_t, uint8_t, const uint8_t *, uint16_t,
-                               void *), void *userdata)
-{
-    Messenger *m = tox;
-    g_callback_group_invite(m->group_chat_object, function, userdata);
-}
+//void tox_callback_group_invite(Tox *tox, void (*function)(Messenger *tox, int32_t, uint8_t, const uint8_t *, uint16_t,
+//                               void *), void *userdata)
+//{
+//    Messenger *m = tox;
+//    g_callback_group_invite(m->group_chat_object, function, userdata);
+//}
 
 /* Set the callback for group messages.
  *
  *  Function(Tox *tox, int groupnumber, int peernumber, uint8_t * message, uint16_t length, void *userdata)
  */
-void tox_callback_group_message(Tox *tox, void (*function)(Messenger *tox, int, int, const uint8_t *, uint16_t, void *),
-                                void *userdata)
-{
-    Messenger *m = tox;
-    g_callback_group_message(m->group_chat_object, function, userdata);
-}
+//void tox_callback_group_message(Tox *tox, void (*function)(Messenger *tox, int, int, const uint8_t *, uint16_t, void *),
+//                                void *userdata)
+//{
+//    Messenger *m = tox;
+//    g_callback_group_message(m->group_chat_object, function, userdata);
+//}
 
 /* Set the callback for group actions.
  *
  *  Function(Tox *tox, int groupnumber, int peernumber, uint8_t * action, uint16_t length, void *userdata)
  */
-void tox_callback_group_action(Tox *tox, void (*function)(Messenger *tox, int, int, const uint8_t *, uint16_t, void *),
-                               void *userdata)
-{
-    Messenger *m = tox;
-    g_callback_group_action(m->group_chat_object, function, userdata);
-}
+//void tox_callback_group_action(Tox *tox, void (*function)(Messenger *tox, int, int, const uint8_t *, uint16_t, void *),
+//                               void *userdata)
+//{
+//    Messenger *m = tox;
+//    g_callback_group_action(m->group_chat_object, function, userdata);
+//}
 
 /* Set callback function for title changes.
  *
  * Function(Tox *tox, int groupnumber, int peernumber, uint8_t * title, uint8_t length, void *userdata)
  * if peernumber == -1, then author is unknown (e.g. initial joining the group)
  */
-void tox_callback_group_title(Tox *tox, void (*function)(Messenger *tox, int, int, const uint8_t *, uint8_t,
-                              void *), void *userdata)
-{
-    Messenger *m = tox;
-    g_callback_group_title(m->group_chat_object, function, userdata);
-}
+//void tox_callback_group_title(Tox *tox, void (*function)(Messenger *tox, int, int, const uint8_t *, uint8_t,
+//                              void *), void *userdata)
+//{
+//    Messenger *m = tox;
+//    g_callback_group_title(m->group_chat_object, function, userdata);
+//}
 
 /* Set callback function for peer name list changes.
  *
  * It gets called every time the name list changes(new peer/name, deleted peer)
  *  Function(Tox *tox, int groupnumber, void *userdata)
  */
-void tox_callback_group_namelist_change(Tox *tox, void (*function)(Tox *tox, int, int, uint8_t, void *), void *userdata)
-{
-    Messenger *m = tox;
-    g_callback_group_namelistchange(m->group_chat_object, function, userdata);
-}
+//void tox_callback_group_namelist_change(Tox *tox, void (*function)(Tox *tox, int, int, uint8_t, void *), void *userdata)
+//{
+//    Messenger *m = tox;
+//    g_callback_group_namelistchange(m->group_chat_object, function, userdata);
+//}
 
 /* Creates a new groupchat and puts it in the chats array.
  *

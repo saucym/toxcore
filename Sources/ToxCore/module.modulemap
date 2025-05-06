@@ -1,0 +1,4 @@
+module ToxCore [system] {
+    header "tox.h"
+    export *
+}
